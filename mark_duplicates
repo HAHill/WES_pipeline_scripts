@@ -1,0 +1,26 @@
+#!/usr/bin/
+
+
+echo "STEP 3: Mark Duplicates - Picard"
+
+
+PICARDHOME="/risapps/noarch/picard/2.23.8/build/libs"
+deduped="/rsrch4/scratch/bcb/hahill1/files/yliu/aligned/deduped"
+merged="/rsrch4/scratch/bcb/hahill1/files/yliu/aligned/merged"
+marked ="/rsrch4/scratch/bcb/hahill1/files/yliu/aligned/marked"
+
+
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH1_S1_merged.sam   -O ${deduped}/1-MCH1_S1_merged_d.sam  -M ${marked}/1-MCH1_S1_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH2_S2_merged.sam   -O ${deduped}/1-MCH2_S2_merged_d.sam  -M ${marked}/1-MCH2_S2_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH3_S3_merged.sam   -O ${deduped}/1-MCH3_S3_merged_d.sam  -M ${marked}/1-MCH3_S3_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH4_S4_merged.sam   -O ${deduped}/1-MCH4_S4_merged_d.sam  -M ${marked}/1-MCH4_S4_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH5_S5_merged.sam   -O ${deduped}/1-MCH5_S5_merged_d.sam  -M ${marked}/1-MCH5_S5_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH1_S6G_merged.sam  -O ${deduped}/1-MCH1_S6G_merged_d.sam -M ${marked}/1-MCH1_S6_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH2_S7G_merged.sam  -O ${deduped}/1-MCH2_S7G_merged_d.sam -M ${marked}/1-MCH2_S7_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH3_S8G_merged.sam  -O ${deduped}/1-MCH3_S8G_merged_d.sam -M ${marked}/1-MCH3_S8_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH4_S9G_merged.sam  -O ${deduped}/1-MCH4_S9G_merged_d.sam -M ${marked}/1-MCH4_S9_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+java -jar $PICARDHOME/picard.jar MarkDuplicates -I ${merged}/1-MCH5_S10G_merged.sam  -O ${deduped}/1-MCH5_S10G_merged_d.sam -M ${marked}/1-MCH5_S10_metrics.txt -MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 1000 
+
+
+
+
