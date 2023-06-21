@@ -1,8 +1,5 @@
 # WES_pipeline_scripts
-Basic scripts for conducting WES analysis on germline and somatic DNA samples
-
-Special thanks to https://github.com/kpatel427 for her amazing YouTube bioinformatics tutorials and super useful script. 
-
+Basic scripts for conducting WES analysis on germline and somatic DNA samples 
 ** "wes_script.sh" puts all pieces of the pipeline together, but is usually run in pieces for QC assessment.
 
 STEPS:
@@ -17,3 +14,5 @@ STEPS:
 9. Use Funcotator (or preferred annotator) to annotate and filter somatic variants. Output = VCF or MAF. 
 10. Optional, call CNV utilize ExomeCNV or preferred software
 11. Visualization and analyses.
+
+Special thanks to https://github.com/kpatel427 for her amazing YouTube bioinformatics tutorials and super useful script.
