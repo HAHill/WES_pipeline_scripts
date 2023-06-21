@@ -1,0 +1,15 @@
+
+
+#BSUB -W 24:00
+#BSUB -o /rsrch4/scratch/bcb/HHill/logs
+#BSUB -cwd /rsrch4/scratch/bcb/HHill/
+#BSUB -q medium
+#BSUB -n 12
+#BSUB -M 16
+#BSUB -R rusage[mem=16]
+#BSUB -u HAHill1@mdanderson.org
+#BSUB -J wes_mcl_yliu
+
+module load 
+
+
