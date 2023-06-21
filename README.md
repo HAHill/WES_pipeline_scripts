@@ -1,6 +1,8 @@
 # WES_pipeline_scripts
 Basic scripts for conducting WES analysis on germline and somatic DNA samples
 
+Special thanks to https://github.com/kpatel427 for her amazing YouTube bioinformatics tutorials and super useful script. 
+
 ** "wes_script.sh" puts all pieces of the pipeline together, but is usually run in pieces for QC assessment.
 
 STEPS:
