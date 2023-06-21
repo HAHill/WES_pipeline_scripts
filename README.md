@@ -2,7 +2,7 @@
 Basic scripts for conducting WES analysis on germline and somatic DNA samples
 
 ** "wes_script.sh" puts all pieces of the pipeline together, but is usually run in pieces for QC assessment.
-STEPS:
+##STEPS:
 1. Run fastp for QC and moderate trimming on demultiplexed data (FASTQs). Check QC metrics for all files. Can process UMI if needed.
 2. Map (align) to reference genome using BWA-MEM algorithm.
 3. Merge SAM or BAM Files (if dual end reads) with Picard.
