@@ -1,0 +1,6 @@
+echo "STEP 8: Filter Mutect2 variants"
+
+ref="/rsrch4/scratch/bcb/hahill1/files/support_files/Homo_sapiens_assembly38.fasta"
+
+
+ gatk FilterMutectCalls -R ${ref} -V {results}/MCH1_somatic.vcf.gz -O {results}/MCH1_filtered.vcf.gz
